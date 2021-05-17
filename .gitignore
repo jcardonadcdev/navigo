@@ -2,3 +2,5 @@ node_modules
 npm-debug.log
 .vscode
 .idea
+lib/*.*
+lib/**/*.*
