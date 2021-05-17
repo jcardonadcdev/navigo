@@ -74,7 +74,7 @@ export function matchRoute(context: QContext, route: Route): false | Match {
   const [current, GETParams] = extractGETParameters(
     clean(context.currentLocationPath)
   );
-  const params = GETParams === "" ? null : parseQuery(GETParams);
+  const params: any = GETParams === "" ? null : parseQuery(GETParams);
   const paramNames = [];
   let pattern;
   if (isString(route.path)) {

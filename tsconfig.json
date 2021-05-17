@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+	  "inlineSourceMap": false,
+	  "jsx": "react",
+    "jsxFactory": "tsx",
+    "lib": ["dom", "es2015", "ES2018.Promise"],
+    "module": "amd",
+    "moduleResolution": "node",
+    "noEmitHelpers": true,
+    "noEmitOnError": true,
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "noImplicitUseStrict": true,
+    "noUnusedLocals": true,
+    "removeComments": false,
+    "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "target": "es5"
+  },
+  "include": [
+    "src/navigo.ts",
+    "src/constants.ts",
+    "src/lifecycles.ts",
+    "src/Q.ts",
+    "src/utils.ts",
+    "src/middlewares/*.ts",
+    "index.d.ts"
+  ]
+}

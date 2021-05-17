@@ -67,9 +67,9 @@ declare class Navigo {
   destroyed: boolean;
   current: null | Match[];
   lastResolved(): null | Match[];
-  on(f: Handler, hooks?: RouteHooks): Navigo;
-  on(map: Object, hooks?: RouteHooks): Navigo;
-  on(path: string | RegExp, f: Handler, hooks?: RouteHooks): Navigo;
+  //on(f: Handler, hooks?: RouteHooks): Navigo;
+  //on(map: Object, hooks?: RouteHooks): Navigo;
+  on(path: string | Function | Object | RegExp, f?: Handler, hooks?: RouteHooks): Navigo;
   off(path: string | RegExp): Navigo;
   off(handler: Function): Navigo;
   navigate(to: string, options?: NavigateOptions): void;
@@ -78,7 +78,7 @@ declare class Navigo {
     data?: Object,
     options?: NavigateOptions
   ): boolean;
-  resolve(path?: string, resolveOptions?: ResolveOptions): false | Match;
+  resolve(path?: string, resolveOptions?: ResolveOptions): false | Match[];
   destroy(): void;
   notFound(handler: Function, hooks?: RouteHooks): Navigo;
   updatePageLinks(): Navigo;
