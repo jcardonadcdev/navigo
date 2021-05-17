@@ -53,7 +53,7 @@ export function extractGETParameters(url: string) {
   const tmp = clean(url).split(/\?(.*)?$/);
   return [clean(tmp[0]), tmp.slice(1).join("")];
 }
-export function parseQuery(queryString: string): Object {
+export function parseQuery(queryString: string): Record<string, string> {
   var query = {};
   var pairs = queryString.split("&");
   for (var i = 0; i < pairs.length; i++) {

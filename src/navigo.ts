@@ -57,6 +57,9 @@ class Navigo {
     } else {
       this.root = clean(appRoute);
     }
+
+    this.listen();
+    this.updatePageLinks();
   }
 
   //----------------
@@ -606,4 +609,4 @@ class Navigo {
   }
 }
 
-export default Navigo;
+export = Navigo;

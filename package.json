@@ -23,6 +23,7 @@
     "url": "git@github.com:krasimir/navigo.git"
   },
   "scripts": {
+    "compile:ts": "tsc -p tsconfig.json",
     "dev": "webpack --progress --watch --env dev",
     "dev-amd": "webpack --progress --watch --env dev --amd",
     "release": "yarn test && webpack --env dev && webpack --env dev --amd && webpack --env build && webpack --env build --amd && yarn build-es",

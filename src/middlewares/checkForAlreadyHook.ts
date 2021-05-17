@@ -1,7 +1,7 @@
 import { QContext } from "../../index";
 import { undefinedOrTrue } from "../utils";
 
-export default function checkForAlreadyHook(context: QContext, done) {
+export default function checkForAlreadyHook(context: QContext, done: any) {
   const current = context.instance.lastResolved();
   if (
     current &&
